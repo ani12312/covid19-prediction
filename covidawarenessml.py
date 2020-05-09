@@ -1,8 +1,11 @@
+from sklearn.preprocessing import MinMaxScaler
 import sys
 import numpy as np
 import pandas as pd
 a=input("Enter the state:")
 i=a+".h5"
+n_input=5
+n_features=1
 try:
     from keras.models import load_model
     model=load_model(i)
